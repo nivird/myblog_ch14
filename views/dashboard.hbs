@@ -1,0 +1,7 @@
+<h1>Dashboard</h1>
+<ul>
+{{#each blogPosts}}
+    <li><a href="/post/{{id}}">{{title}}</a> ({{createdAt}})</li>
+{{/each}}
+</ul>
+<a href="/dashboard/new">Add New Post</a>

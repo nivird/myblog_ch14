@@ -1,0 +1,8 @@
+{{#each blogPosts}}
+<article>
+    <h2>{{title}}</h2>
+    <p>Posted by {{author}} on {{createdAt}}</p>
+    <p>{{{content}}}</p>
+    <a href="/post/{{id}}">Read more</a>
+</article>
+{{/each}}
