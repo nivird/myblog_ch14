@@ -1,18 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-</head>
-<body>
-    <h1>Welcome to the Home Page</h1>
+<div class="container">
+    <header>
+        <h1>Welcome to the Home Page</h1>
+    </header>
+    <div class="auth">
+        <p>You are logged in. <a href="/logout">Logout</a></p>
+    </div>
+    <div class="guest">
+        <p>Please <a href="/login">login</a> or <a href="/signup">sign up</a>.</p>
+    </div>
     {{#each blogPosts}}
-        <div>
+        <div class="blog-post">
             <h2>{{title}}</h2>
             <p>{{content}}</p>
-            <p>By {{author}} on {{createdAt}}</p>
+            <p class="meta">By {{author}} on {{createdAt}}</p>
         </div>
     {{/each}}
-</body>
-</html>
+    <form>
+        <label for="exampleInput">Example Input</label>
+        <input type="text" id="exampleInput" name="exampleInput">
+        <button type="submit">Submit</button>
+    </form>
+</div>
