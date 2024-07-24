@@ -1,122 +1,103 @@
-/* Reset default browser styles */
+/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styles */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     line-height: 1.6;
-    background-color: #f0f0f0;
-    padding: 20px;
+    margin: 20px;
 }
 
-/* Header styles */
 header {
-    background-color: #333;
+    background: #333;
     color: #fff;
     padding: 10px 0;
     text-align: center;
 }
 
-header nav ul {
-    list-style-type: none;
-    padding: 0;
+header h1 {
+    margin: 0;
 }
 
-header nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 10px;
-}
-
-header nav ul li a:hover {
-    background-color: #555;
-}
-
-/* Main content styles */
-main {
-    background-color: #fff;
+.container {
+    max-width: 1100px;
+    margin: 20px auto;
     padding: 20px;
-    margin-top: 20px;
+    background: #fff;
+    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Article styles */
-article {
+h1, h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.blog-post {
+    margin-bottom: 30px;
+}
+
+.blog-post h2 {
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.blog-post p {
+    margin-bottom: 10px;
+}
+
+.blog-post .meta {
+    font-size: 0.9em;
+    color: #666;
+}
+
+form {
     margin-bottom: 20px;
 }
 
-article h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-article p {
-    margin-bottom: 10px;
-}
-
-/* Form styles */
-form {
-    margin-top: 20px;
-}
-
-form input,
-form textarea {
+form label {
     display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form textarea {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+    border-radius: 5px;
 }
 
 form button {
-    background-color: #333;
-    color: #fff;
+    padding: 10px 15px;
+    background: #007BFF;
     border: none;
-    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
     cursor: pointer;
-    border-radius: 4px;
 }
 
 form button:hover {
-    background-color: #555;
+    background: #0056b3;
 }
 
-/* Footer styles */
-footer {
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px 0;
-    background-color: #333;
-    color: #fff;
+.error {
+    color: red;
+    margin-bottom: 10px;
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-    header nav ul {
-        display: block;
-        text-align: center;
-        margin-top: 10px;
-    }
-
-    header nav ul li {
-        display: block;
-        margin: 0;
-        margin-bottom: 10px;
-    }
-
-    header nav ul li a {
-        display: block;
-        padding: 10px;
-    }
+.success {
+    color: green;
+    margin-bottom: 10px;
 }
