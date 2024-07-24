@@ -1,9 +1,10 @@
 {
   "name": "myblog_ch14",
   "version": "1.0.0",
-  "description": "",
+  "description": "Blog Site\r This project is a simple CMS-style blog site built with Node.js, Express, Handlebars, and PostgreSQL. It allows users to sign up, log in, create, read, update, and delete blog posts.",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
@@ -12,8 +13,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "express": "^4.19.2",
     "express-handlebars": "^7.1.3",
+    "jsonwebtoken": "^9.0.2",
     "pg": "^8.12.0"
   },
   "devDependencies": {
